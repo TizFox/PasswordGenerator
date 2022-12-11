@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Debug;
+    src: url(../assets/DebugFreeTrial-MVdYB.otf);
+}
+
+body {
+    text-align: center;
+    background-color: #CFFDE1;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: Debug;
+    font-size: 6rem;
+    color: #198754;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #198754;
+    font-weight: 900;
+
+    border: 1rem dotted;
+    
+    padding: 2rem;
+}
+
+h3 {
+    font-family: Debug;
+    font-size: 3rem;
+}
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+.setting-col {
+    padding: 2% 2%;
+}
+
+.card-header {
+    background-color: #198754;
+    color: #FFF;
+}

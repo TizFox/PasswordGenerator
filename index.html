@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Password Generator</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Font Awesome-->
+        <script src="https://kit.fontawesome.com/ba06ebf7f1.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+
+        <!-- My Style and Script-->
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js"></script>
+
+        <link rel="icon" href="assets/Logo.png">
+    </head>
+
+    <body>
+        <!-- Title -->
+        <div class="container-fluid">
+            <h1>Password Generator</h1>
+        </div>
+
+        <!-- Settings -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Letters -->
+                <div class="setting-col col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Letters</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Include Letters in password? <br> <input id="lettersCheckbox" name="lettersCheckbox" type="checkbox" checked></p>
+                            <p>How many Letters to generate? <br> <input id="lettersNumber" name="lettersNumber" type="number" min="0" max="8" value="6"> <br> (Max 12)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Numbers -->
+                <div class="setting-col col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Numbers</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Include Numbers in password? <br> <input id="numbersCheckbox" name="numbersCheckbox" type="checkbox" checked></p>
+                            <p>How many Numbers to generate? <br> <input id="numbersNumber" name="numbersNumber" type="number" min="0" max="8" value="4"> <br> (Max 12)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Symbols -->
+                <div class="setting-col col-lg-4 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Symbols</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Include Symbols in password? <br> <input id="symbolsCheckbox" name="symbolsCheckbox" type="checkbox" checked></p>
+                            <p>How many Symbols to generate? <br> <input id="symbolsNumber" name="symbolsNumber" type="number" min="0" max="4" value="2"> <br> (Max 8)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <button onclick="generatePassword()" class="btn btn-lg btn-outline-success">
+                <i class="fa-solid fa-arrows-rotate"></i> Generate
+            </button>
+        </div>
+
+        <!-- Results -->
+        <div class="container-fluid">
+            <h2 id="password">*Password Here*</h2>
+        </div>
+
+        <!-- Credits -->
+        <div class="container-fluid">
+            <h3>BY <img src="assets/LogoCredits.png" alt="" height=75px></h3>
+        </div>
+    </body>
+</html>
